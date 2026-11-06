@@ -1,0 +1,76 @@
+{
+  "dataset": {
+    "sourceFile": "campus_benchmark_350.json",
+    "totalPairs": 350,
+    "positiveGroundTruthPairs": 175,
+    "candidatePoolSize": 350
+  },
+  "weights": {
+    "baseline": {
+      "visual": 0.4,
+      "textual": 0.25,
+      "location": 0.15,
+      "time": 0.1,
+      "attribute": 0.1
+    },
+    "tuned": {
+      "visual": 0.05,
+      "textual": 0.05,
+      "location": 0.05,
+      "time": 0.05,
+      "attribute": 0.8
+    }
+  },
+  "fullDatasetEvaluation": {
+    "baseline": {
+      "mrr": 1.0,
+      "totalQueries": 175,
+      "recall@1": 100.0,
+      "precision@1": 100.0,
+      "recall@3": 100.0,
+      "precision@3": 33.33,
+      "recall@5": 100.0,
+      "precision@5": 20.0
+    },
+    "tuned": {
+      "mrr": 1.0,
+      "totalQueries": 175,
+      "recall@1": 100.0,
+      "precision@1": 100.0,
+      "recall@3": 100.0,
+      "precision@3": 33.33,
+      "recall@5": 100.0,
+      "precision@5": 20.0
+    }
+  },
+  "heldOutTestEvaluation": {
+    "baseline": {
+      "mrr": 1.0,
+      "totalQueries": 88,
+      "recall@1": 100.0,
+      "precision@1": 100.0,
+      "recall@3": 100.0,
+      "precision@3": 33.33,
+      "recall@5": 100.0,
+      "precision@5": 20.0
+    },
+    "tuned": {
+      "mrr": 1.0,
+      "totalQueries": 88,
+      "recall@1": 100.0,
+      "precision@1": 100.0,
+      "recall@3": 100.0,
+      "precision@3": 33.33,
+      "recall@5": 100.0,
+      "precision@5": 20.0
+    }
+  },
+  "academicSummary": {
+    "mrrBaseline": 1.0,
+    "mrrTuned": 1.0,
+    "mrrGain": 0.0,
+    "recall1Gain": 0.0,
+    "recall3Gain": 0.0,
+    "recall5Gain": 0.0
+  }
+}

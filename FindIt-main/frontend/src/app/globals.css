@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* System font stack — no external font loading required */
+:root {
+  --font-inter: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@theme {
+  --color-brand-bg: #141715;
+  --color-brand-card: #1D231F;
+  --color-brand-border: #333C35;
+  --color-brand-text: #F3F4EF;
+  --color-brand-muted: #C4CBC5;
+  --color-brand-emerald: #45B58A;
+  --color-brand-emerald-hover: #3ca37c;
+  --color-brand-emerald-light: #61cca2;
+}
+
+:root {
+  --bg-main: #141715;
+  --bg-card: #1d231f;
+  --border-subtle: #333c35;
+  --text-main: #f3f4ef;
+  --text-secondary: #c4cbc5;
+  --primary-accent: #45b58a;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #141715;
+}
+::-webkit-scrollbar-thumb {
+  background: #363E38;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4D574F;
+}
+
+/* Subtle floating card animation */
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Subtle gradient shimmer for accent headline */
+@keyframes emeraldShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-subtle-float {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+.animate-gradient-text {
+  background-size: 200% auto;
+  animation: emeraldShimmer 5s ease infinite;
+}
+
+/* Ambient Emerald Radar Scan */
+@keyframes emeraldScan {
+  0% {
+    top: 5%;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    top: 95%;
+    opacity: 0.2;
+  }
+}
+
+.animate-cyber-scan {
+  animation: emeraldScan 3s ease-in-out infinite alternate;
+}
+
+/* Subtle grid line animation */
+@keyframes gridFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 32px 32px;
+  }
+}
+
+.animate-grid-flow {
+  background-size: 32px 32px;
+  animation: gridFlow 6s linear infinite;
+}
+
+/* Calm Staggered Entrance Animations */
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleInFade {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDownFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-slide-up {
+  animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-scale-in {
+  animation: scaleInFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Precision Scanner Sweep */
+@keyframes precisionSweep {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.animate-laser-sweep {
+  animation: precisionSweep 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Utility classes for Graphite + Emerald system */
+body {
+  background-color: #141715;
+  background-image: 
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(69, 181, 138, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 90% 40%, rgba(69, 181, 138, 0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 50% at 10% 80%, rgba(69, 181, 138, 0.04) 0%, transparent 60%);
+  background-attachment: fixed;
+  color: #F3F4EF;
+  min-height: 100vh;
+}

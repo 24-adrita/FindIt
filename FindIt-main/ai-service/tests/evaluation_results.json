@@ -1,0 +1,928 @@
+{
+  "evaluation_timestamp": "2026-10-16T16:15:00Z",
+  "random_seed": 42,
+  "dataset_summary": {
+    "total_pairs": 30,
+    "positive_matches": 15,
+    "negative_distractors": 15,
+    "train_pairs": 18,
+    "val_pairs": 12,
+    "data_nature": "Ground-truth labeled representative campus loss/found scenarios (synthetic vector fixtures)"
+  },
+  "baseline_evaluation": {
+    "threshold": 0.6,
+    "weights": {
+      "visual": 0.4,
+      "textual": 0.25,
+      "location": 0.15,
+      "time": 0.1,
+      "attribute": 0.1
+    },
+    "total_pairs": 30,
+    "tp": 15,
+    "fp": 8,
+    "tn": 7,
+    "fn": 0,
+    "precision": 0.6522,
+    "recall": 1.0,
+    "f1_score": 0.7895,
+    "accuracy": 0.7333,
+    "predictions": [
+      {
+        "id": "pair_01",
+        "scenario": "Same MacBook Pro from different angles",
+        "score": 0.9033,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_02",
+        "scenario": "Sony Over-Ear Noise Canceling Headphones",
+        "score": 0.8741,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_03",
+        "scenario": "Blue Hydro Flask bottle with stickers",
+        "score": 0.8772,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_04",
+        "scenario": "Text-Only Match: TI-84 Plus Graphing Calculator",
+        "score": 0.9347,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_05",
+        "scenario": "Text-Only Match: North Face Recon Backpack",
+        "score": 0.8653,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_06",
+        "scenario": "Keys on Shuttle Bus vs Transit Stop (2-day gap)",
+        "score": 0.847,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_07",
+        "scenario": "University Student ID Card",
+        "score": 0.9017,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_08",
+        "scenario": "Apple AirPods Pro with white charging case",
+        "score": 0.8577,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_09",
+        "scenario": "Black umbrella with curved wooden handle",
+        "score": 0.8453,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_10",
+        "scenario": "Brown Leather Bi-fold Wallet",
+        "score": 0.8849,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_11",
+        "scenario": "Green 5-Subject Chem Spiral Notebook",
+        "score": 0.8882,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_12",
+        "scenario": "Casio G-Shock Matte Black Watch",
+        "score": 0.8808,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_13",
+        "scenario": "Levi's Denim Jacket with Sherpa Collar",
+        "score": 0.8627,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_14",
+        "scenario": "Anker 10000mAh Portable Charger",
+        "score": 0.9065,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_15",
+        "scenario": "Ray-Ban Clubmaster Tortoise Sunglasses",
+        "score": 0.8757,
+        "predicted": 1,
+        "actual": 1,
+        "result": "TP"
+      },
+      {
+        "id": "pair_16",
+        "scenario": "Visual Distractor: Dell XPS vs HP Envy (different brands)",
+        "score": 0.6397,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_17",
+        "scenario": "Visual Distractor: Blue Hydro Flask vs Blue Klean Kanteen",
+        "score": 0.6142,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_18",
+        "scenario": "Text Distractor: iPhone 13 Pro vs iPhone 11",
+        "score": 0.6596,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_19",
+        "scenario": "Text Distractor: Calculus Stewart vs Campbell Biology",
+        "score": 0.5938,
+        "predicted": 0,
+        "actual": 0,
+        "result": "TN"
+      },
+      {
+        "id": "pair_20",
+        "scenario": "Category Mismatch: Black Leather Jacket vs Black Leather Wallet",
+        "score": 0.4596,
+        "predicted": 0,
+        "actual": 0,
+        "result": "TN"
+      },
+      {
+        "id": "pair_21",
+        "scenario": "Spatiotemporal Extreme Mismatch (5-month gap, different campus zones)",
+        "score": 0.4225,
+        "predicted": 0,
+        "actual": 0,
+        "result": "TN"
+      },
+      {
+        "id": "pair_22",
+        "scenario": "Completely Unrelated Items: AirTag vs Sunglasses",
+        "score": 0.3101,
+        "predicted": 0,
+        "actual": 0,
+        "result": "TN"
+      },
+      {
+        "id": "pair_23",
+        "scenario": "Color/Location Distractor: Red Lenovo Backpack vs Red Nike Gym Bag",
+        "score": 0.6326,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_24",
+        "scenario": "Text-Only Negative Distractor: Wireless Mouse vs Keyboard",
+        "score": 0.7826,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_25",
+        "scenario": "Missing Data Negative: Generic item vs Specific tool",
+        "score": 0.3359,
+        "predicted": 0,
+        "actual": 0,
+        "result": "TN"
+      },
+      {
+        "id": "pair_26",
+        "scenario": "Brand Distractor: Honda Key vs Ford Key",
+        "score": 0.6266,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_27",
+        "scenario": "Brand Distractor: Stanley 40oz vs Owala FreeSip",
+        "score": 0.6442,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_28",
+        "scenario": "Style Distractor: Gold Aviators vs Plastic Reading Glasses",
+        "score": 0.5008,
+        "predicted": 0,
+        "actual": 0,
+        "result": "TN"
+      },
+      {
+        "id": "pair_29",
+        "scenario": "Brand Distractor: AirPods Max vs Beats Studio",
+        "score": 0.6412,
+        "predicted": 1,
+        "actual": 0,
+        "result": "FP"
+      },
+      {
+        "id": "pair_30",
+        "scenario": "Completely Unrelated: Red Wool Scarf vs Black Umbrella",
+        "score": 0.2679,
+        "predicted": 0,
+        "actual": 0,
+        "result": "TN"
+      }
+    ]
+  },
+  "threshold_sensitivity": [
+    {
+      "threshold": 0.45,
+      "precision": 0.5769,
+      "recall": 1.0,
+      "f1_score": 0.7317,
+      "tp": 15,
+      "fp": 11,
+      "tn": 4,
+      "fn": 0
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1_score": 0.75,
+      "tp": 15,
+      "fp": 10,
+      "tn": 5,
+      "fn": 0
+    },
+    {
+      "threshold": 0.55,
+      "precision": 0.625,
+      "recall": 1.0,
+      "f1_score": 0.7692,
+      "tp": 15,
+      "fp": 9,
+      "tn": 6,
+      "fn": 0
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.6522,
+      "recall": 1.0,
+      "f1_score": 0.7895,
+      "tp": 15,
+      "fp": 8,
+      "tn": 7,
+      "fn": 0
+    },
+    {
+      "threshold": 0.65,
+      "precision": 0.8824,
+      "recall": 1.0,
+      "f1_score": 0.9375,
+      "tp": 15,
+      "fp": 2,
+      "tn": 13,
+      "fn": 0
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1_score": 0.9677,
+      "tp": 15,
+      "fp": 1,
+      "tn": 14,
+      "fn": 0
+    }
+  ],
+  "grid_search": {
+    "best_tuned_weights": {
+      "visual": 0.2,
+      "textual": 0.4,
+      "location": 0.1,
+      "time": 0.05,
+      "attribute": 0.25
+    },
+    "train_f1": 0.9474,
+    "validation_baseline": {
+      "threshold": 0.6,
+      "weights": {
+        "visual": 0.4,
+        "textual": 0.25,
+        "location": 0.15,
+        "time": 0.1,
+        "attribute": 0.1
+      },
+      "total_pairs": 12,
+      "tp": 6,
+      "fp": 4,
+      "tn": 2,
+      "fn": 0,
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1_score": 0.75,
+      "accuracy": 0.6667,
+      "predictions": [
+        {
+          "id": "pair_01",
+          "scenario": "Same MacBook Pro from different angles",
+          "score": 0.9033,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_02",
+          "scenario": "Sony Over-Ear Noise Canceling Headphones",
+          "score": 0.8741,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_04",
+          "scenario": "Text-Only Match: TI-84 Plus Graphing Calculator",
+          "score": 0.9347,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_05",
+          "scenario": "Text-Only Match: North Face Recon Backpack",
+          "score": 0.8653,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_11",
+          "scenario": "Green 5-Subject Chem Spiral Notebook",
+          "score": 0.8882,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_12",
+          "scenario": "Casio G-Shock Matte Black Watch",
+          "score": 0.8808,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_16",
+          "scenario": "Visual Distractor: Dell XPS vs HP Envy (different brands)",
+          "score": 0.6397,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_17",
+          "scenario": "Visual Distractor: Blue Hydro Flask vs Blue Klean Kanteen",
+          "score": 0.6142,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_19",
+          "scenario": "Text Distractor: Calculus Stewart vs Campbell Biology",
+          "score": 0.5938,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_24",
+          "scenario": "Text-Only Negative Distractor: Wireless Mouse vs Keyboard",
+          "score": 0.7826,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_27",
+          "scenario": "Brand Distractor: Stanley 40oz vs Owala FreeSip",
+          "score": 0.6442,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_30",
+          "scenario": "Completely Unrelated: Red Wool Scarf vs Black Umbrella",
+          "score": 0.2679,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        }
+      ]
+    },
+    "validation_tuned": {
+      "threshold": 0.6,
+      "weights": {
+        "visual": 0.2,
+        "textual": 0.4,
+        "location": 0.1,
+        "time": 0.05,
+        "attribute": 0.25
+      },
+      "total_pairs": 12,
+      "tp": 6,
+      "fp": 2,
+      "tn": 4,
+      "fn": 0,
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1_score": 0.8571,
+      "accuracy": 0.8333,
+      "predictions": [
+        {
+          "id": "pair_01",
+          "scenario": "Same MacBook Pro from different angles",
+          "score": 0.9136,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_02",
+          "scenario": "Sony Over-Ear Noise Canceling Headphones",
+          "score": 0.8703,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_04",
+          "scenario": "Text-Only Match: TI-84 Plus Graphing Calculator",
+          "score": 0.9127,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_05",
+          "scenario": "Text-Only Match: North Face Recon Backpack",
+          "score": 0.892,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_11",
+          "scenario": "Green 5-Subject Chem Spiral Notebook",
+          "score": 0.8976,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_12",
+          "scenario": "Casio G-Shock Matte Black Watch",
+          "score": 0.8867,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_16",
+          "scenario": "Visual Distractor: Dell XPS vs HP Envy (different brands)",
+          "score": 0.6111,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_17",
+          "scenario": "Visual Distractor: Blue Hydro Flask vs Blue Klean Kanteen",
+          "score": 0.5701,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_19",
+          "scenario": "Text Distractor: Calculus Stewart vs Campbell Biology",
+          "score": 0.5852,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_24",
+          "scenario": "Text-Only Negative Distractor: Wireless Mouse vs Keyboard",
+          "score": 0.7397,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_27",
+          "scenario": "Brand Distractor: Stanley 40oz vs Owala FreeSip",
+          "score": 0.5994,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_30",
+          "scenario": "Completely Unrelated: Red Wool Scarf vs Black Umbrella",
+          "score": 0.199,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        }
+      ]
+    },
+    "full_tuned": {
+      "threshold": 0.6,
+      "weights": {
+        "visual": 0.2,
+        "textual": 0.4,
+        "location": 0.1,
+        "time": 0.05,
+        "attribute": 0.25
+      },
+      "total_pairs": 30,
+      "tp": 15,
+      "fp": 3,
+      "tn": 12,
+      "fn": 0,
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1_score": 0.9091,
+      "accuracy": 0.9,
+      "predictions": [
+        {
+          "id": "pair_01",
+          "scenario": "Same MacBook Pro from different angles",
+          "score": 0.9136,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_02",
+          "scenario": "Sony Over-Ear Noise Canceling Headphones",
+          "score": 0.8703,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_03",
+          "scenario": "Blue Hydro Flask bottle with stickers",
+          "score": 0.8666,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_04",
+          "scenario": "Text-Only Match: TI-84 Plus Graphing Calculator",
+          "score": 0.9127,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_05",
+          "scenario": "Text-Only Match: North Face Recon Backpack",
+          "score": 0.892,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_06",
+          "scenario": "Keys on Shuttle Bus vs Transit Stop (2-day gap)",
+          "score": 0.872,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_07",
+          "scenario": "University Student ID Card",
+          "score": 0.9158,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_08",
+          "scenario": "Apple AirPods Pro with white charging case",
+          "score": 0.8546,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_09",
+          "scenario": "Black umbrella with curved wooden handle",
+          "score": 0.8402,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_10",
+          "scenario": "Brown Leather Bi-fold Wallet",
+          "score": 0.8787,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_11",
+          "scenario": "Green 5-Subject Chem Spiral Notebook",
+          "score": 0.8976,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_12",
+          "scenario": "Casio G-Shock Matte Black Watch",
+          "score": 0.8867,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_13",
+          "scenario": "Levi's Denim Jacket with Sherpa Collar",
+          "score": 0.8716,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_14",
+          "scenario": "Anker 10000mAh Portable Charger",
+          "score": 0.9095,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_15",
+          "scenario": "Ray-Ban Clubmaster Tortoise Sunglasses",
+          "score": 0.8856,
+          "predicted": 1,
+          "actual": 1,
+          "result": "TP"
+        },
+        {
+          "id": "pair_16",
+          "scenario": "Visual Distractor: Dell XPS vs HP Envy (different brands)",
+          "score": 0.6111,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_17",
+          "scenario": "Visual Distractor: Blue Hydro Flask vs Blue Klean Kanteen",
+          "score": 0.5701,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_18",
+          "scenario": "Text Distractor: iPhone 13 Pro vs iPhone 11",
+          "score": 0.6868,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_19",
+          "scenario": "Text Distractor: Calculus Stewart vs Campbell Biology",
+          "score": 0.5852,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_20",
+          "scenario": "Category Mismatch: Black Leather Jacket vs Black Leather Wallet",
+          "score": 0.3873,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_21",
+          "scenario": "Spatiotemporal Extreme Mismatch (5-month gap, different campus zones)",
+          "score": 0.507,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_22",
+          "scenario": "Completely Unrelated Items: AirTag vs Sunglasses",
+          "score": 0.2171,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_23",
+          "scenario": "Color/Location Distractor: Red Lenovo Backpack vs Red Nike Gym Bag",
+          "score": 0.5923,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_24",
+          "scenario": "Text-Only Negative Distractor: Wireless Mouse vs Keyboard",
+          "score": 0.7397,
+          "predicted": 1,
+          "actual": 0,
+          "result": "FP"
+        },
+        {
+          "id": "pair_25",
+          "scenario": "Missing Data Negative: Generic item vs Specific tool",
+          "score": 0.3805,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_26",
+          "scenario": "Brand Distractor: Honda Key vs Ford Key",
+          "score": 0.5983,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_27",
+          "scenario": "Brand Distractor: Stanley 40oz vs Owala FreeSip",
+          "score": 0.5994,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_28",
+          "scenario": "Style Distractor: Gold Aviators vs Plastic Reading Glasses",
+          "score": 0.4584,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_29",
+          "scenario": "Brand Distractor: AirPods Max vs Beats Studio",
+          "score": 0.5941,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        },
+        {
+          "id": "pair_30",
+          "scenario": "Completely Unrelated: Red Wool Scarf vs Black Umbrella",
+          "score": 0.199,
+          "predicted": 0,
+          "actual": 0,
+          "result": "TN"
+        }
+      ]
+    },
+    "top_candidates": [
+      {
+        "weights": {
+          "visual": 0.2,
+          "textual": 0.4,
+          "location": 0.1,
+          "time": 0.05,
+          "attribute": 0.25
+        },
+        "train_f1": 0.9474,
+        "train_precision": 0.9,
+        "train_recall": 1.0,
+        "val_f1": 0.8571,
+        "val_precision": 0.75,
+        "val_recall": 1.0
+      },
+      {
+        "weights": {
+          "visual": 0.2,
+          "textual": 0.45,
+          "location": 0.1,
+          "time": 0.05,
+          "attribute": 0.2
+        },
+        "train_f1": 0.9474,
+        "train_precision": 0.9,
+        "train_recall": 1.0,
+        "val_f1": 0.9231,
+        "val_precision": 0.8571,
+        "val_recall": 1.0
+      },
+      {
+        "weights": {
+          "visual": 0.2,
+          "textual": 0.45,
+          "location": 0.15,
+          "time": 0.05,
+          "attribute": 0.15
+        },
+        "train_f1": 0.9474,
+        "train_precision": 0.9,
+        "train_recall": 1.0,
+        "val_f1": 0.9231,
+        "val_precision": 0.8571,
+        "val_recall": 1.0
+      },
+      {
+        "weights": {
+          "visual": 0.2,
+          "textual": 0.5,
+          "location": 0.1,
+          "time": 0.05,
+          "attribute": 0.15
+        },
+        "train_f1": 0.9474,
+        "train_precision": 0.9,
+        "train_recall": 1.0,
+        "val_f1": 0.9231,
+        "val_precision": 0.8571,
+        "val_recall": 1.0
+      },
+      {
+        "weights": {
+          "visual": 0.2,
+          "textual": 0.5,
+          "location": 0.15,
+          "time": 0.05,
+          "attribute": 0.1
+        },
+        "train_f1": 0.9474,
+        "train_precision": 0.9,
+        "train_recall": 1.0,
+        "val_f1": 0.9231,
+        "val_precision": 0.8571,
+        "val_recall": 1.0
+      }
+    ]
+  },
+  "final_policy_decision": {
+    "selected_weights": {
+      "visual": 0.2,
+      "textual": 0.4,
+      "location": 0.1,
+      "time": 0.05,
+      "attribute": 0.25
+    },
+    "justification": "Tuned weights selected: statistically meaningful empirical improvement demonstrated on validation.",
+    "threshold": 0.6
+  }
+}
